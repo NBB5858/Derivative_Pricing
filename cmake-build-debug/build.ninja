@@ -123,20 +123,6 @@ build CMakeFiles/Derivative_Pricing2.dir/SimpleMC.cpp.o: CXX_COMPILER__Derivativ
   OBJECT_DIR = CMakeFiles/Derivative_Pricing2.dir
   OBJECT_FILE_DIR = CMakeFiles/Derivative_Pricing2.dir
 
-build CMakeFiles/Derivative_Pricing2.dir/SimpleMCMain3.cpp.o: CXX_COMPILER__Derivative_Pricing2_unscanned_Debug /Users/noahbittermann/CLionProjects/Derivative-Pricing/SimpleMCMain3.cpp || cmake_object_order_depends_target_Derivative_Pricing2
-  DEP_FILE = CMakeFiles/Derivative_Pricing2.dir/SimpleMCMain3.cpp.o.d
-  FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fcolor-diagnostics
-  INCLUDES = -I/Users/noahbittermann/CLionProjects/Derivative-Pricing/include
-  OBJECT_DIR = CMakeFiles/Derivative_Pricing2.dir
-  OBJECT_FILE_DIR = CMakeFiles/Derivative_Pricing2.dir
-
-build CMakeFiles/Derivative_Pricing2.dir/DoubleDigital.cpp.o: CXX_COMPILER__Derivative_Pricing2_unscanned_Debug /Users/noahbittermann/CLionProjects/Derivative-Pricing/DoubleDigital.cpp || cmake_object_order_depends_target_Derivative_Pricing2
-  DEP_FILE = CMakeFiles/Derivative_Pricing2.dir/DoubleDigital.cpp.o.d
-  FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fcolor-diagnostics
-  INCLUDES = -I/Users/noahbittermann/CLionProjects/Derivative-Pricing/include
-  OBJECT_DIR = CMakeFiles/Derivative_Pricing2.dir
-  OBJECT_FILE_DIR = CMakeFiles/Derivative_Pricing2.dir
-
 
 # =============================================================================
 # Link build statements for EXECUTABLE target Derivative_Pricing2
@@ -145,7 +131,7 @@ build CMakeFiles/Derivative_Pricing2.dir/DoubleDigital.cpp.o: CXX_COMPILER__Deri
 #############################################
 # Link the executable Derivative_Pricing2
 
-build Derivative_Pricing2: CXX_EXECUTABLE_LINKER__Derivative_Pricing2_Debug CMakeFiles/Derivative_Pricing2.dir/SimpleMCMain2.cpp.o CMakeFiles/Derivative_Pricing2.dir/Random1.cpp.o CMakeFiles/Derivative_Pricing2.dir/PayOff1.cpp.o CMakeFiles/Derivative_Pricing2.dir/SimpleMC.cpp.o CMakeFiles/Derivative_Pricing2.dir/SimpleMCMain3.cpp.o CMakeFiles/Derivative_Pricing2.dir/DoubleDigital.cpp.o
+build Derivative_Pricing2: CXX_EXECUTABLE_LINKER__Derivative_Pricing2_Debug CMakeFiles/Derivative_Pricing2.dir/SimpleMCMain2.cpp.o CMakeFiles/Derivative_Pricing2.dir/Random1.cpp.o CMakeFiles/Derivative_Pricing2.dir/PayOff1.cpp.o CMakeFiles/Derivative_Pricing2.dir/SimpleMC.cpp.o
   FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk
   OBJECT_DIR = CMakeFiles/Derivative_Pricing2.dir
   POST_BUILD = :
@@ -266,6 +252,66 @@ build Derivative_Pricing5: CXX_EXECUTABLE_LINKER__Derivative_Pricing5_Debug CMak
   TARGET_FILE = Derivative_Pricing5
   TARGET_PDB = Derivative_Pricing5.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target Derivative_Pricing5_Quanto
+
+
+#############################################
+# Order-only phony target for Derivative_Pricing5_Quanto
+
+build cmake_object_order_depends_target_Derivative_Pricing5_Quanto: phony || CMakeFiles/Derivative_Pricing5_Quanto.dir
+
+build CMakeFiles/Derivative_Pricing5_Quanto.dir/SimpleMCMain5_Quanto.cpp.o: CXX_COMPILER__Derivative_Pricing5_Quanto_unscanned_Debug /Users/noahbittermann/CLionProjects/Derivative-Pricing/SimpleMCMain5_Quanto.cpp || cmake_object_order_depends_target_Derivative_Pricing5_Quanto
+  DEP_FILE = CMakeFiles/Derivative_Pricing5_Quanto.dir/SimpleMCMain5_Quanto.cpp.o.d
+  FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fcolor-diagnostics
+  INCLUDES = -I/Users/noahbittermann/CLionProjects/Derivative-Pricing/include
+  OBJECT_DIR = CMakeFiles/Derivative_Pricing5_Quanto.dir
+  OBJECT_FILE_DIR = CMakeFiles/Derivative_Pricing5_Quanto.dir
+
+build CMakeFiles/Derivative_Pricing5_Quanto.dir/Quanto.cpp.o: CXX_COMPILER__Derivative_Pricing5_Quanto_unscanned_Debug /Users/noahbittermann/CLionProjects/Derivative-Pricing/Quanto.cpp || cmake_object_order_depends_target_Derivative_Pricing5_Quanto
+  DEP_FILE = CMakeFiles/Derivative_Pricing5_Quanto.dir/Quanto.cpp.o.d
+  FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fcolor-diagnostics
+  INCLUDES = -I/Users/noahbittermann/CLionProjects/Derivative-Pricing/include
+  OBJECT_DIR = CMakeFiles/Derivative_Pricing5_Quanto.dir
+  OBJECT_FILE_DIR = CMakeFiles/Derivative_Pricing5_Quanto.dir
+
+build CMakeFiles/Derivative_Pricing5_Quanto.dir/Random1.cpp.o: CXX_COMPILER__Derivative_Pricing5_Quanto_unscanned_Debug /Users/noahbittermann/CLionProjects/Derivative-Pricing/Random1.cpp || cmake_object_order_depends_target_Derivative_Pricing5_Quanto
+  DEP_FILE = CMakeFiles/Derivative_Pricing5_Quanto.dir/Random1.cpp.o.d
+  FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fcolor-diagnostics
+  INCLUDES = -I/Users/noahbittermann/CLionProjects/Derivative-Pricing/include
+  OBJECT_DIR = CMakeFiles/Derivative_Pricing5_Quanto.dir
+  OBJECT_FILE_DIR = CMakeFiles/Derivative_Pricing5_Quanto.dir
+
+build CMakeFiles/Derivative_Pricing5_Quanto.dir/PayOff2.cpp.o: CXX_COMPILER__Derivative_Pricing5_Quanto_unscanned_Debug /Users/noahbittermann/CLionProjects/Derivative-Pricing/PayOff2.cpp || cmake_object_order_depends_target_Derivative_Pricing5_Quanto
+  DEP_FILE = CMakeFiles/Derivative_Pricing5_Quanto.dir/PayOff2.cpp.o.d
+  FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fcolor-diagnostics
+  INCLUDES = -I/Users/noahbittermann/CLionProjects/Derivative-Pricing/include
+  OBJECT_DIR = CMakeFiles/Derivative_Pricing5_Quanto.dir
+  OBJECT_FILE_DIR = CMakeFiles/Derivative_Pricing5_Quanto.dir
+
+build CMakeFiles/Derivative_Pricing5_Quanto.dir/SimpleMC2.cpp.o: CXX_COMPILER__Derivative_Pricing5_Quanto_unscanned_Debug /Users/noahbittermann/CLionProjects/Derivative-Pricing/SimpleMC2.cpp || cmake_object_order_depends_target_Derivative_Pricing5_Quanto
+  DEP_FILE = CMakeFiles/Derivative_Pricing5_Quanto.dir/SimpleMC2.cpp.o.d
+  FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fcolor-diagnostics
+  INCLUDES = -I/Users/noahbittermann/CLionProjects/Derivative-Pricing/include
+  OBJECT_DIR = CMakeFiles/Derivative_Pricing5_Quanto.dir
+  OBJECT_FILE_DIR = CMakeFiles/Derivative_Pricing5_Quanto.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target Derivative_Pricing5_Quanto
+
+
+#############################################
+# Link the executable Derivative_Pricing5_Quanto
+
+build Derivative_Pricing5_Quanto: CXX_EXECUTABLE_LINKER__Derivative_Pricing5_Quanto_Debug CMakeFiles/Derivative_Pricing5_Quanto.dir/SimpleMCMain5_Quanto.cpp.o CMakeFiles/Derivative_Pricing5_Quanto.dir/Quanto.cpp.o CMakeFiles/Derivative_Pricing5_Quanto.dir/Random1.cpp.o CMakeFiles/Derivative_Pricing5_Quanto.dir/PayOff2.cpp.o CMakeFiles/Derivative_Pricing5_Quanto.dir/SimpleMC2.cpp.o
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk
+  OBJECT_DIR = CMakeFiles/Derivative_Pricing5_Quanto.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = Derivative_Pricing5_Quanto
+  TARGET_PDB = Derivative_Pricing5_Quanto.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -300,7 +346,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 #############################################
 # Folder: /Users/noahbittermann/CLionProjects/Derivative-Pricing/cmake-build-debug
 
-build all: phony Derivative_Pricing1 Derivative_Pricing2 Derivative_Pricing3 Derivative_Pricing5
+build all: phony Derivative_Pricing1 Derivative_Pricing2 Derivative_Pricing3 Derivative_Pricing5 Derivative_Pricing5_Quanto
 
 # =============================================================================
 # Built-in targets
