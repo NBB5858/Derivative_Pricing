@@ -1,0 +1,22 @@
+//
+// Created by Noah bittermann on 7/21/24.
+//
+
+#ifndef PAYOFF1_H
+#define PAYOFF1_H
+
+class PayOff {
+public:
+    enum OptionType {call, put, digitalcall};
+    PayOff(double Strike_, OptionType TheOptionsType_);
+    double operator()(double Spot) const;
+
+private:
+    double Strike;
+    OptionType TheOptionsType;
+};
+
+#endif
+
+
+

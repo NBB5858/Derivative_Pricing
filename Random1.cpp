@@ -2,7 +2,7 @@
 // Created by Noah bittermann on 7/20/24.
 //
 
-#include "Random1.h"
+#include <Random1.h>
 #include <cstdlib>
 #include <cmath>
 

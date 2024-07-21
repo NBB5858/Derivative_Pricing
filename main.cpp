@@ -1,5 +1,5 @@
 #include <iostream>
-#include "Random1.h"
+#include <Random1.h>
 #include <cmath>
 using namespace std;
 
@@ -8,7 +8,8 @@ double SimpleMonteCarlo1(double Expiry,
                          double Spot,
                          double Vol,
                          double r,
-                         unsigned long NumberOfPaths) {
+                         unsigned long NumberOfPaths,
+                         string payoff_type) {
 
     double variance = Vol*Vol*Expiry;
     double rootVariance = sqrt(variance);
@@ -18,11 +19,22 @@ double SimpleMonteCarlo1(double Expiry,
     double thisSpot;
     double runningSum=0;
 
+    double thisPayoff;
+
     for (unsigned long i=0; i<NumberOfPaths; i++) {
         double thisGaussian = GetOneGaussianByBoxMuller();
         thisSpot = movedSpot*exp(rootVariance*thisGaussian);
-        double thisPayoff = thisSpot - Strike;
-        thisPayoff = thisPayoff > 0 ? thisPayoff : 0;
+
+
+        if (payoff_type == "call") {
+            thisPayoff = thisSpot - Strike;
+            thisPayoff = thisPayoff > 0 ? thisPayoff : 0;
+        } else if (payoff_type == "put") {
+            thisPayoff = Strike - thisSpot;
+            thisPayoff = thisPayoff > 0 ? thisPayoff : 0;
+
+        }
+
         runningSum += thisPayoff;
     }
 
@@ -32,12 +44,18 @@ double SimpleMonteCarlo1(double Expiry,
 }
 
 int main() {
+
     double Expiry;
     double Strike;
     double Spot;
     double Vol;
     double r;
     unsigned long NumberOfPaths;
+    string payoff_type;
+
+
+    cout << "\n Enter payoff type (\"call\" or \"put\") \n";
+    cin >> payoff_type;
 
     cout << "\nEnter expiry\n";
     cin >> Expiry;
@@ -62,7 +80,8 @@ int main() {
                                       Spot,
                                       Vol,
                                       r,
-                                      NumberOfPaths);
+                                      NumberOfPaths,
+                                      payoff_type);
 
     cout <<"the price is " << result << "\n";
 
