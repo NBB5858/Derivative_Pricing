@@ -6,54 +6,16 @@ set(CMAKE_CXX_STANDARD 17)
 include_directories(/Users/noahbittermann/CLionProjects/Derivative-Pricing/include)
 
 
-add_executable(Derivative_Pricing1
-        main.cpp
+add_executable(Derivative_Pricing7
+        VanillaMain2.cpp
+        include/Vanilla2.h
+        Vanilla2.cpp
+        include/DoubleDigital2.h
+        DoubleDigital2.cpp
         include/Random1.h
         Random1.cpp
-        SimpleMC2.cpp
-        include/SimpleMC2.h
-)
-
-add_executable(Derivative_Pricing2
-        SimpleMCMain2.cpp
-        include/Random1.h
-        Random1.cpp
-        include/PayOff1.h
-        PayOff1.cpp
-        include/SimpleMC.h
-        SimpleMC.cpp
-)
-
-add_executable(Derivative_Pricing3
-        SimpleMCMain3.cpp
-        include/Random1.h
-        Random1.cpp
-        include/PayOff2.h
-        PayOff2.cpp
-        include/SimpleMC2.h
-        SimpleMC2.cpp
-)
-
-add_executable(Derivative_Pricing5
-        SimpleMCMain5.cpp
-        include/DoubleDigital.h
-        DoubleDigital.cpp
-        include/Random1.h
-        Random1.cpp
-        include/PayOff2.h
-        PayOff2.cpp
-        include/SimpleMC2.h
-        SimpleMC2.cpp
-)
-
-add_executable(Derivative_Pricing5_Quanto
-        SimpleMCMain5_Quanto.cpp
-        include/Quanto.h
-        Quanto.cpp
-        include/Random1.h
-        Random1.cpp
-        include/PayOff2.h
-        PayOff2.cpp
-        include/SimpleMC2.h
-        SimpleMC2.cpp
+        include/PayOff3.h
+        PayOff3.cpp
+        include/SimpleMC4.h
+        SimpleMC4.cpp
 )

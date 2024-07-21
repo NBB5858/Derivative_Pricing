@@ -2,14 +2,12 @@
 // Created by Noah bittermann on 7/21/24.
 //
 
-#ifndef SIMPLEMC2_H
-#define SIMPLEMC2_H
+#ifndef SIMPLEMC3_H
+#define SIMPLEMC3_H
 
+#include <Vanilla2.h>
 
-#include <PayOff2.h>
-
-double SimpleMonteCarlo2(const PayOff& thePayOff,
-                         double Expiry,
+double SimpleMonteCarlo3(const VanillaOption& TheOption,
                          double Spot,
                          double Vol,
                          double r,
@@ -18,4 +16,4 @@ double SimpleMonteCarlo2(const PayOff& thePayOff,
 
 
 
-#endif //SIMPLEMC2_H
+#endif //SIMPLEMC3_H

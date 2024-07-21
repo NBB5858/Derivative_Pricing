@@ -4,7 +4,7 @@
 
 #ifndef DOUBLEDIGITAL_H
 #define DOUBLEDIGITAL_H
-#include <PayOff2.h>
+#include <PayOff3.h>
 
 
 
@@ -14,6 +14,7 @@ public:
     PayOffDoubleDigital(double LowerLevel_, double UpperLever_);
     virtual double operator()(double Spot) const;
     virtual ~PayOffDoubleDigital(){}
+    virtual PayOff* clone() const;
 
 private:
     double LowerLevel;

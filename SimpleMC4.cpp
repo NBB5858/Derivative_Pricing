@@ -2,21 +2,22 @@
 // Created by Noah bittermann on 7/21/24.
 //
 
-
-#include <SimpleMC2.h>
+#include <SimpleMC4.h>
 #include <Random1.h>
 #include <cmath>
+
 
 #if !defined(_MSC_VER)
     using namespace std;
 #endif
 
-double SimpleMonteCarlo2(const PayOff& thePayOff,
-                         double Expiry,
+double SimpleMonteCarlo3(const VanillaOption& TheOption,
                          double Spot,
                          double Vol,
                          double r,
                          unsigned long NumberOfPaths) {
+
+    double Expiry = TheOption.GetExpiry();
 
     double variance = Vol*Vol*Expiry;
     double rootVariance = sqrt(variance);
@@ -29,7 +30,7 @@ double SimpleMonteCarlo2(const PayOff& thePayOff,
     for (unsigned long i=0; i<NumberOfPaths; i++) {
         double thisGaussian = GetOneGaussianByBoxMuller();
         thisSpot = movedSpot*exp(rootVariance*thisGaussian);
-        double thisPayoff = thePayOff(thisSpot);
+        double thisPayoff = TheOption.OptionPayOff(thisSpot);
         runningSum += thisPayoff;
     }
 
@@ -37,3 +38,4 @@ double SimpleMonteCarlo2(const PayOff& thePayOff,
     mean *= exp(-r*Expiry);
     return mean;
 }
+

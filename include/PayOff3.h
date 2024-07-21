@@ -2,8 +2,8 @@
 // Created by Noah bittermann on 7/21/24.
 //
 
-#ifndef PAYOFF2_H
-#define PAYOFF2_H
+#ifndef PAYOFF3_H
+#define PAYOFF3_H
 
 
 
@@ -12,6 +12,7 @@ public:
     PayOff(){};
     virtual double operator()(double Spot) const = 0;
     virtual ~PayOff(){}
+    virtual PayOff* clone() const=0;
 private:
 
 };
@@ -21,6 +22,7 @@ public:
     PayOffCall(double Strike_);
     virtual double operator()(double Spot) const;
     virtual ~PayOffCall(){};
+    virtual PayOff* clone() const;
 private:
     double Strike;
 };
@@ -30,8 +32,11 @@ public:
     PayOffPut(double Strike_);
     virtual double operator()(double Spot) const;
     virtual ~PayOffPut(){};
+    virtual PayOff* clone() const;
 private:
     double Strike;
 };
 
-#endif //PAYOFF2_H
+
+
+#endif //PAYOFF3_H
